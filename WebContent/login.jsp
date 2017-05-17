@@ -16,11 +16,12 @@
 	if( rs.next() )
 	{
 		session.setAttribute( "username", userName );
-		response.sendRedirect( "success.jsp" );
 		driverManager.closeConnection();
-	}else
+		response.sendRedirect( "success.jsp" );
+	}
+	else
 	{
-		out.println("Invalid password <a href='index.jsp'>try again</a>");
+		out.println( "Invalid user info <a href='index.jsp'>please try again</a>" );
 		driverManager.closeConnection();
 	}
 %>
