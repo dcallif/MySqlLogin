@@ -13,10 +13,14 @@
 	ResultSet rs;
 	rs = st.executeQuery(
 			"select * from EMPLOYEE where USER_NAME='" + userName + "' and PASSWORD='" + password + "'");
-	if (rs.next()) {
-		session.setAttribute("username", userName);
-		response.sendRedirect("success.jsp");
-	} else {
+	if( rs.next() )
+	{
+		session.setAttribute( "username", userName );
+		response.sendRedirect( "success.jsp" );
+		driverManager.closeConnection();
+	}else
+	{
 		out.println("Invalid password <a href='index.jsp'>try again</a>");
+		driverManager.closeConnection();
 	}
 %>

@@ -18,19 +18,19 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td>User Name</td>
-						<td><input type="text" name="username" value="" /></td>
+						<td>User Name:</td>
+						<td><input type="text" name="username" required value="" /></td>
 					</tr>
 					<tr>
-						<td>Password</td>
-						<td><input type="password" name="password" value="" /></td>
+						<td>Password:</td>
+						<td><input type="password" name="password" required value="" /></td>
 					</tr>
 					<tr>
 						<td><input type="submit" value="Login" /></td>
-						<td><input type="reset" value="Reset" /></td>
+						<td><input type="reset" value="Reset Fields" /></td>
 					</tr>
 					<tr>
-						<td colspan="2">New User <a href="registerpage.jsp">Register Here</a></td>
+						<td colspan="2">New User? <a href="registerpage.jsp">Register Here</a></td>
 					</tr>
 				</tbody>
 			</table>

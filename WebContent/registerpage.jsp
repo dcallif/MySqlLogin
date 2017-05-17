@@ -18,32 +18,31 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td>First Name</td>
-						<td><input type="text" name="firstname" value="" /></td>
+						<td>First Name:</td>
+						<td><input type="text" name="firstname" required value="" /></td>
 					</tr>
 					<tr>
-						<td>Last Name</td>
-						<td><input type="text" name="lastname" value="" /></td>
+						<td>Last Name:</td>
+						<td><input type="text" name="lastname" required value="" /></td>
 					</tr>
 					<tr>
-						<td>Email</td>
-						<td><input type="text" name="email" value="" /></td>
+						<td>Email:</td>
+						<td><input type="text" name="email" required value="" /></td>
 					</tr>
 					<tr>
-						<td>User Name</td>
-						<td><input type="text" name="username" value="" /></td>
+						<td>User Name:</td>
+						<td><input type="text" name="username" required value="" /></td>
 					</tr>
 					<tr>
-						<td>Password</td>
-						<td><input type="password" name="password" value="" /></td>
+						<td>Password:</td>
+						<td><input type="password" name="password" required value="" /></td>
 					</tr>
 					<tr>
 						<td><input type="submit" value="Submit" /></td>
-						<td><input type="reset" value="Reset" /></td>
+						<td><input type="reset" value="Reset Fields" /></td>
 					</tr>
 					<tr>
-						<td colspan="2">Already registered?<a href="index.jsp">Login
-							Here</a></td>
+						<td colspan="2">Already registered? <a href="index.jsp">Login Here</a></td>
 					</tr>
 				</tbody>
 			</table>
