@@ -19,7 +19,7 @@
 				<tbody>
 					<tr>
 						<td>User Name:</td>
-						<td><input type="text" name="username" required value="" /></td>
+						<td><input type="text" name="userName" required value="" /></td>
 					</tr>
 					<tr>
 						<td>Password:</td>
