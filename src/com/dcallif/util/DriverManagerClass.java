@@ -14,11 +14,11 @@ public class DriverManagerClass
 		try 
 		{
 			//Loading Driver for MySql
-			Class.forName(driverName);
+			Class.forName( driverName );
 		} 
 		catch (ClassNotFoundException e) 
 		{
-			System.out.println(e.toString());
+			System.out.println( e.toString() );
 		}
 	}
 	
@@ -29,11 +29,11 @@ public class DriverManagerClass
 		{
 			con = DriverManager
 					.getConnection(connectionUrl,userName,userPass);
-			System.out.println("******* Connection created successfully........");
+			System.out.println( "******* Connection created successfully........" );
 		} 
-		catch (SQLException e) 
+		catch(SQLException e) 
 		{
-			System.out.println(e.toString());
+			System.out.println( e.toString() );
 		}
 		return con;
 	}
@@ -44,11 +44,11 @@ public class DriverManagerClass
 		try
 		{
 			this.con.close();
-			System.out.println("******* Connection closed Successfully.........");
+			System.out.println( "******* Connection closed Successfully........." );
 		}
 		catch(Exception e)
 		{
-			System.out.println(e.toString());
+			System.out.println( e.toString() );
 		}
 	}
 }
