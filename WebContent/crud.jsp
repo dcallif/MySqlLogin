@@ -13,7 +13,7 @@
 	String queryAccount = new String();
 	System.out.println(userName);
 	try {
-		queryAccount = "delete from EMPLOYEE where USER_NAME='" + userName + "'";
+		queryAccount = "delete from EMPLOYEE where ID='" + userName + "'";
 		st.executeUpdate( queryAccount );
 
 		driverManager.closeConnection();

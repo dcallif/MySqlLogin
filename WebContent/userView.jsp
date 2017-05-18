@@ -20,7 +20,7 @@
 		<table border="2" width="30%" cellpadding="3">
 			<thead>
 				<tr>
-					<th colspan="4">User view Database Table</th>
+					<th colspan="5">All users in table (except you)</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -28,9 +28,8 @@
 					<td>Id:</td>
 					<td>First Name:</td>
 					<td>Last Name:</td>
-					<td>User Name:</td>
 					<td>Email:</td>
-					<td>Delete</td>
+					<td>User Name:</td>
 				</tr>
 				<%
 					while (resultset.next()) {
@@ -40,13 +39,13 @@
 				<td><%=resultset.getString(3)%></td>
 				<td><%=resultset.getString(4)%></td>
 				<td><%=resultset.getString(5)%></td>
-				<td><input type="submit" value="<%=resultset.getString(5)%>" name="userToDelete" /></td>
 			</tbody>
-			<% 
-				} driveManager.closeConnection();
+			<%
+				}
+				driveManager.closeConnection();
 			%>
 		</table>
-		<a href='logout.jsp'>Log out</a>
+		<a href='logout.jsp'>Log out</a> <a><input type="text" name="userToDelete" required value="" /><input type="submit" value="Delete" /></a>
 	</form>
 </body>
 </html>
