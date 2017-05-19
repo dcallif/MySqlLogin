@@ -7,7 +7,7 @@
 <title>Fail page</title>
 </head>
 <body>
-	Registration Failed. Please try again.
+	Failed. Please try again.
 	<a href='index.jsp'>Go to Login</a>
 </body>
 </html>

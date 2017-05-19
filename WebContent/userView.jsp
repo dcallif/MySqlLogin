@@ -6,6 +6,9 @@
 </head>
 <%
 	String userName = (String) session.getAttribute("userName");
+	if ((userName == null) || (userName == "")) {
+		response.sendRedirect("success.jsp");
+	}
 %>
 <body>
 	<%
@@ -45,7 +48,9 @@
 				driveManager.closeConnection();
 			%>
 		</table>
-		<a href='logout.jsp'>Log out</a> <a><input type="text" name="userToDelete" required value="" /><input type="submit" value="Delete" /></a>
+		<a href='logout.jsp'>Log out</a> <a><input type="text"
+			name="userToDelete" required value="" /> <input type="submit"
+			value="Delete" /></a>
 	</form>
 </body>
 </html>
