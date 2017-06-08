@@ -7,7 +7,7 @@
 <%
 	String userName = (String) session.getAttribute("userName");
 	if ((userName == null) || (userName == "")) {
-		response.sendRedirect("success.jsp");
+		response.sendRedirect("fail.jsp");
 	}
 %>
 <body>
